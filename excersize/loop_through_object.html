@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="social"></ul>
+     <script >
+    const data ={
+name:"Aja Mobiani",
+title:"teacher",
+courses:{
+    english : "bla bla",
+    russian : "privet",
+    spanish : "hola",
+
+}
+
+    };
+
+    let output = "";
+    //looping through the const data
+    for(key in data.courses){
+//        console.log(key)
+output += '<li>' + 
+            '<a href="'+ data.courses[key] +
+            '">' + key + '</a>' + 
+          '</li>';
+         // console.log(output)
+    }
+
+    const update = document.querySelector('.social');
+    console.log(update)
+    update.innerHTML = output.toUpperCase(update);
+</script>
+
+    
+</body>
+</html>

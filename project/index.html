@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/thumbnail-gallery.css">
+</head>
+<body>
+   
+    <div class="container">
+     
+        <div class="controls">
+          
+           <a id="prev" href="#" class="left carousel-control">
+               <span class="glyphicon glyphicon-chevron-left"></span>
+           </a>
+           
+            <a id="next" href="#" class='right carousel-control'>
+               <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+           
+            
+        </div>
+        
+        
+         
+         <div class="carimages"></div>
+          
+          
+          <script id="carimagestemplate" type="text/template">
+          
+   
+          
+          
+               {{#cars}}
+               
+                   
+                   <div>
+                   
+                       <img src="images/{{name}}.jpg" alt="car image for ">
+                   
+                   </div>
+               
+               
+               {{/cars}}
+          
+   
+          
+          
+          
+          </script>
+          
+          
+          
+          
+      </div>
+   
+   
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+   <script src="scripts.js"></script>
+ 
+</body>
+</html>
